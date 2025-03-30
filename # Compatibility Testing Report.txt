@@ -1,0 +1,49 @@
+# Compatibility Testing Report
+
+## Website: [Shoplane by Lassie](https://shoplane-by-lassie.netlify.app/)
+
+## Test Environment
+- **Browsers Tested:**
+  - Google Chrome (v120.0.0)
+  - Mozilla Firefox (v115.0.0)
+  - Safari (v16.2)
+  - Microsoft Edge (v118.0.0)
+
+- **Devices Tested:**
+  - Desktop (Windows 10, macOS 13)
+  - Tablet (iPad Air, Android Tab)
+  - Mobile (iPhone 13, Samsung Galaxy S21)
+
+## Test Scenarios
+1. **Layout and UI Consistency**
+2. **Broken Links**
+3. **Functionality Discrepancies**
+
+## Findings
+
+### 1. Layout and UI Consistency
+| Browser/Device          | Issue                      | Severity | Recommendation                   |
+|----------------         |---------------------       |--------- |----------------------            |
+| Chrome (Mobile)         | Overlapping navigation bar | High     | Adjust CSS media queries         |
+| Firefox (Tablet)        | Misaligned product grid    | Medium   | Modify flexbox properties        |
+| Safari (Desktop)        | Images not loading properly| High     | Check image format compatibility |
+
+### 2. Broken Links
+| Page        | Link               | Status |
+|-------------|-----------------   |--------|
+| Home Page   | Featured Product   | Broken |
+| Checkout    | Terms & Conditions | Broken |
+
+**Recommendation:** Fix the URL paths and verify server-side handling.
+
+### 3. Functionality Discrepancies
+| Feature                 | Browser/Device      | Issue                   | Severity | Recommendation                   |
+|----------------         |-----------------    |----------------         |--------- |--------------------              |
+| Add to Cart             | Edge (Desktop)      | Button unresponsive     | High     | Debug JavaScript event listeners |
+| Search Bar              | Firefox (Mobile)    | Placeholder text missing| Low      | Check input field attributes     |
+
+## Conclusion
+- Prioritize fixing high-severity layout issues and broken links.
+- Conduct additional regression testing after fixes are implemented.
+- Regularly update cross-browser testing as new browser versions are released.
+
